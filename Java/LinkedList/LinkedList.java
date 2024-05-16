@@ -118,7 +118,7 @@ public class LinkedList {
         length++;
     }
 
-    public Node removeFrist() {
+    public Node removeFirst() {
         if (length == 0) return null;
         Node temp = head;
         head = head.next; //head points to the next
@@ -130,8 +130,85 @@ public class LinkedList {
         return temp;
     }
 
+    public Node get (int index) {
+        if (index < 0 || index >= length) {
+            return null;
+        }
+
+        if (length == 0) {
+            return null;
+        }
+
+        Node temp = head;
+        for (int i = 0; i < index; i++) {
+            temp = temp.next;
+        }
+
+        return temp; //retorne o valor alocado
+
+    }
+
+    public boolean set (int index, int value) { //reusing code
+       Node temp = get(index);
+       if (temp != null) {
+        temp.value = value;
+        return true;
+       }
+
+       return false; //if the codition is not satisfied, it does not pass
 
 
+    }
+    
+
+    public boolean insert (int index, int value) {
+        if (index < 0 || index > length) return false;
+        if (index == 0) {
+            prepend (value); // adds the element in the beginning of the list
+            return true;
+        }
+
+        if (index == length) {
+            append(value); // adds the element in the end of the list
+            return true;
+        }
+
+        Node newNode = new Node (value);
+        Node temp = get(index - 1);
+        newNode.next = temp.next; //the most important part, pointer correction. Point the new node to where the "temp" pointer was pointing out
+        temp.next = newNode; 
+        length++;
+        return true;
+    }
+
+    public Node remove (int index) {
+        if(index < 0 || index >= length) return null;
+        if(index == 0) return removeFirst(); //you can return it because its a NODE
+        if(index == length - 1) return removeLast();
+
+        Node prev = get (index - 1);
+        Node temp = prev.next;
+
+        prev.next = temp.next; //adjusts the anterior pointer to the next pointer, most important part
+        temp.next = null;
+        length--;
+
+        return temp;
+    }
+
+    public void reverse() {
+        Node temp = head;
+        head = tail;
+        tail = temp; //tail = temp = head  //list inversion by transitivity
+        Node after = temp.next; //advances on the next node
+        Node before = null; //the node before points out to nothing
+        for (int i = 0; i < length; i++) {
+            after = temp.next;
+            temp.next = before;
+            before = temp;
+            temp = after;
+        }
+    }
 
 
 
