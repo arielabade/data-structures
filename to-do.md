@@ -1,0 +1,2 @@
+- [ ] Array
+- [ ] Search about how to calculate complexity with big O in the stndard code, withou data structures (important to PAA)
