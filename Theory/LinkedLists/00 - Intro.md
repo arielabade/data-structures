@@ -3,6 +3,8 @@
 
 A linked list is like an array, the differenca between a linked list and a array is that  you **CAN NOT** jump directly to a particular item. 
 
+Linked list flows only in one direction.
+
 Also, a linked list have two pointers: a head, and a tail.
 
 And the nodes (memory spaces that store values) have pointers to the subsequent node, in one single direction.
