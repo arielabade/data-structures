@@ -1,5 +1,5 @@
 
-package Java.LinkedList;
+package Java.LinkedList.Code;
 
 
 public class LinkedList {
