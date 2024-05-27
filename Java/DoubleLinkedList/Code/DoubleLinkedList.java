@@ -101,6 +101,80 @@ public class DoubleLinkedList {
 
     }
 
+    //optmized get
+    public Node get (int index) {
+        if (index < 0 || index >= length) return null;
+        Node temp = head;
+        if (index < length/2) {
+            for(int i = 0; i < index; i++) {
+                temp = temp.next; // starts the search from the beginning of the list
+            } 
+            
+        } else {
+                temp = tail;
+                for (int i = length -1; i > index; i--) { //iteration from backwards
+                    temp = temp.prev;
+                }
+            }
+
+            return temp;
+        }
+
+    public boolean set(int index, int value) {
+        Node temp = get(index); //the difference on how this works is because of the get method
+        if(temp != null) {
+            temp.value = value;
+            return true;
+        }
+
+        return false;
+    }
+
+    
+    public boolean insert(int index, int value) {
+
+        if(index < 0 || index > length) return false;
+
+        if(index == 0) {
+            prepend(value);
+            return true;
+        }
+
+        if(index == 0) {
+            append(value);
+            return true;
+        }
+
+        Node newNode = new Node (value);
+        Node before = get(index-1); //opening spaces
+        Node after = before.next; //opening spaces
+
+        newNode.prev = before; //first pointer
+        newNode.next = after; //second pointer
+        before.next = newNode; //third pointer
+        after.prev = newNode;  //fourth pointer
+        length++;
+        return true; 
+        
+    }
+
+    public Node remove (int index) {
+
+        if(index < 0 | index >= length) return null;
+        if(index == 0) return removeFirst();
+        if(index == length -1) return removeLast();
+
+        Node temp = get(index);
+
+    //its better to create 3 nodes : before, temp, after and adjuste all of the pointers
+        temp.next.prev = temp.prev; //make a diffrent notation when doing exercises
+        temp.prev.next = temp.next;
+        temp.prev = null;
+        temp.next = null;
+        length--;
+        return temp;
+    }
+
     public void getHead() {
         System.out.println("Head: " + head.value);
     }

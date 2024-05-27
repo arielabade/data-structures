@@ -1,2 +1,7 @@
-- [ ] Array
+- [ ] Create a standard markdown example
+- [ ] Array Structures
+- [ ] Upload leetcode exercises on Linked Lists
+- [ ] Fix the Big O notation on Linked Lists
+- [ ] Make the markdown file for DoubleLinkedList
+- [ ] Make the main file on DoubleLinkedLists
 - [ ] Search about how to calculate complexity with big O in the stndard code, withou data structures (important to PAA)
