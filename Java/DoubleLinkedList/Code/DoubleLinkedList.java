@@ -164,15 +164,17 @@ public class DoubleLinkedList {
         if(index == 0) return removeFirst();
         if(index == length -1) return removeLast();
 
-        Node temp = get(index);
-
-    //its better to create 3 nodes : before, temp, after and adjuste all of the pointers
-        temp.next.prev = temp.prev; //make a diffrent notation when doing exercises
-        temp.prev.next = temp.next;
-        temp.prev = null;
-        temp.next = null;
+	    Node currentNode = get(index);
+	    Node previousNode = currentNode.prev;
+	    Node nextNode = currentNode.next;
+	    
+	    previousNode.next = nextNode; //extremely more readble
+	    nextNode.prev = previousNode;
+	    previousNode.next = null;
+	    previousNode.prev = null;
         length--;
-        return temp;
+
+        return currentNode; 
     }
 
     public void getHead() {
