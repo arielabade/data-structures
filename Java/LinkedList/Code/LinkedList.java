@@ -1,6 +1,4 @@
-
 package Java.LinkedList.Code;
-
 
 public class LinkedList {
     

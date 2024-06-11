@@ -1,4 +1,4 @@
-package Java.LinkedList.Code;
+package Java.DoubleLinkedList.Code;
 
 public class Main {
 
