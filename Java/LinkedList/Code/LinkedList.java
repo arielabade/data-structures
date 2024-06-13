@@ -1,4 +1,4 @@
-package Java.LinkedList.Code;
+package dataStructures.Java.LinkedList.Code;
 
 public class LinkedList {
     

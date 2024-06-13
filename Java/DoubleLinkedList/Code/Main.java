@@ -1,10 +1,9 @@
-package data_structures.Java.DoubleLinkedList;
-
 
 public class Main {
 
     public static void main(String[] args) {
-        DoubleLinkedList myLinkedList = new DoubleLinkedList(1);
+        
+        DoubleLinkedList myLinkedList = new DoubleLinkedList(2);
 
         System.out.println("Initial list:");
         myLinkedList.printList();
