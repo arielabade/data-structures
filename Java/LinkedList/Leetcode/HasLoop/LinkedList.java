@@ -1,4 +1,4 @@
-package dataStructures.Java.LinkedList.Leetcode.HasLoop;
+package Java.LinkedList.Leetcode.HasLoop;
 
 public class LinkedList {
 

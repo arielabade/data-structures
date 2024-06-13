@@ -1,4 +1,4 @@
-package dataStructures.Java.LinkedList.Code; //ok
+package Java.LinkedList.Code; //ok
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package dataStructures.Java.Queue.Code;
+package Java.Queue.Code;
 
 public class Main {
 

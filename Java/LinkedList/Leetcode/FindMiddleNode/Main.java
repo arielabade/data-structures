@@ -1,4 +1,4 @@
-package dataStructures.Java.LinkedList.Leetcode.FindMiddleNode;
+package Java.LinkedList.Leetcode.FindMiddleNode;
 
 public class Main {
 

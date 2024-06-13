@@ -1,4 +1,4 @@
-package dataStructures.Java.LinkedList.Leetcode.KthNodeFromEnd;
+package Java.LinkedList.Leetcode.KthNodeFromEnd;
 
 public class LinkedList {
 

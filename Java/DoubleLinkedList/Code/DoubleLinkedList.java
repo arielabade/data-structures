@@ -1,4 +1,4 @@
-package dataStructures.Java.DoubleLinkedList.Code;
+package Java.DoubleLinkedList.Code;
 
 public class DoubleLinkedList {
 

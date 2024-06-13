@@ -1,4 +1,4 @@
-package dataStructures.Java.Stack.Code;
+package Java.Stack.Code;
 
 public class Stack {
 
