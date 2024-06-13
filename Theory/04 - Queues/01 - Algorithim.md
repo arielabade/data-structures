@@ -4,21 +4,21 @@
 
 ```java
 
-
 public class Queue {
-    private Node front;
-    private Node rear;
-    private int size;
 
-    public Queue(int value) {
-        Node newNode = new Node(value);
-        front = newNode;
-        rear = newNode;
-        size = 1;
+    private Node first;
+    private Node last;
+    private int length;
+
+    class Node {
+        int value;
+        Node next;
+
+        Node (int value) {
+            this.value = value;
+        }
     }
-
 }
-
 
 ```
 

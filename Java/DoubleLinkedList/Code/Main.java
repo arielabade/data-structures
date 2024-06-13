@@ -1,9 +1,10 @@
+package dataStructures.Java.DoubleLinkedList.Code;
 
 public class Main {
 
     public static void main(String[] args) {
         
-        DoubleLinkedList myLinkedList = new DoubleLinkedList(2);
+        dataStructures.Java.DoubleLinkedList.Code.DoubleLinkedList myLinkedList = new dataStructures.Java.DoubleLinkedList.Code.DoubleLinkedList(2);
 
         System.out.println("Initial list:");
         myLinkedList.printList();
