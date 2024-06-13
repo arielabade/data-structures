@@ -1,4 +1,5 @@
-Sure, I'll update the document to refer specifically to "doubly linked lists" and provide examples based on the code you provided.
+
+### Double Linked Lists
 
 # Data Structure Creation
 

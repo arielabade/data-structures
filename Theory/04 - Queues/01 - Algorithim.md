@@ -1,5 +1,27 @@
 # Queues
 
+### Data Structure Creation
+
+```java
+
+
+public class Queue {
+    private Node front;
+    private Node rear;
+    private int size;
+
+    public Queue(int value) {
+        Node newNode = new Node(value);
+        front = newNode;
+        rear = newNode;
+        size = 1;
+    }
+
+}
+
+
+```
+
 The only requirement for a queue to work is to remove an item from one end (the front) and add an item to the other end (the rear).
 
 ## FIFO (First In, First Out)

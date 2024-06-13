@@ -1,5 +1,29 @@
 # Stacks
 
+# Data Structure Creation
+
+```java
+
+ class Node { //define class and the insie method
+        int value;
+        Node next;
+    
+
+    Node(int value) {
+        this.value = value;
+    }
+}
+    private Node top;
+    private int height;
+
+    public Stack(int value) {
+        Node newNode = new Node (value);
+        top = newNode;
+        height = 1;
+    }
+
+
+```
 
 The only requirement for a stack to work is to remove and add an item at the same end.
 

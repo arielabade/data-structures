@@ -1,8 +1,6 @@
 
-public class Stack {
 
-  
-    
+public class Stack {
 
     class Node { //define class and the insie method
         int value;
@@ -15,7 +13,7 @@ public class Stack {
 }
     private Node top;
     private int height;
-    
+
     public Stack(int value) {
         Node newNode = new Node (value);
         top = newNode;
