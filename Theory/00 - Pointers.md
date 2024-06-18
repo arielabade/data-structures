@@ -32,4 +32,4 @@ public class Main {
 
 Then **obj1** and **obj2** are reference variables that point to the same object of the class **MinhaClasse**, that is alocated in a particular and unique memory space. Therefore, any modification made through **obj1** will be reflected when you access the object through **obj2**.
 
-This kind of sintax also exists in other languages, like C.
+This kind of sintax also exists in other languages, like C.git a
