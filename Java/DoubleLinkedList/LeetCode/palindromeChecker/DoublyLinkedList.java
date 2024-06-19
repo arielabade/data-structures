@@ -86,11 +86,9 @@ public class DoublyLinkedList {
             Node fowardNode = head;
             Node backwardNode = tail;
             for (int i = 0; i < length/2; i++) {
-                if (fowardNode.value != backwardNode.value) { //the only stop condition is this one
-                    return false;
+                if (fowardNode.value != backwardNode.value) { 
                 } else {
-                    fowardNode = fowardNode.next; //mais ou menos isso que pensei, mas não consegui colocar em palavras
-                    backwardNode = backwardNode.prev; //ok
+                    fowardNode = fowardNode.next; 
                 }
                 
             }

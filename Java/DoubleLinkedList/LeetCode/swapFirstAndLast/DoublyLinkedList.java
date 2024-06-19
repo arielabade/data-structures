@@ -84,14 +84,13 @@ public class DoublyLinkedList  {
         if(length < 2) {
             return ;
         } else {
-            int temp = head.value; //its just a int pointer
-            head.value = tail.value;  // copia o valor do tail
-            tail.value = temp; //define o valor do tail para o valor armazenado no nó temporário
+            int temp = head.value; 
+            head.value = tail.value;  
+            tail.value = temp; 
             
-            // se copiar direto o valor do tail pro head, ambos os valores ficarão iguais e o valor do head não será armazenado para haver o ajuste de ponteiros depois
+         
              
-            // é a mesma coisa de dizer: head.value = tail .value
-            //mas de um jeito mais complexo
+         
         }
     }
 

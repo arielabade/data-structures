@@ -104,18 +104,18 @@ public class DoublyLinkedList {
 	       
 	       for(int i = 0; i < length; i++) {
 	           temporaryNode = currentNode.prev;
-	           currentNode.prev = currentNode.next; //takes the values on head and add them at the end of the list, then, changes head and tail, good solution
-	           currentNode.next = temporaryNode;
-	           currentNode = currentNode.prev;  //itera pela lista assim até o fim
-	       }
+	           currentNode.prev = currentNode.next; 
+	           currentNode = currentNode.prev;  
 	       
 	       temporaryNode = head;
 	       head = tail;
-	       tail = temporaryNode; //changes stored before 
+	       tail = temporaryNode; 
 	       
 	        }
 	        
 	    }
+
+}
 
 }
 

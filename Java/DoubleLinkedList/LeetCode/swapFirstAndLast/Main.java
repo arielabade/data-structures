@@ -11,12 +11,12 @@ public class Main {
         myList.append(4);
         myList.append(5);
 
-        System.out.println("Antes de swapFirstLast:");
+        System.out.println("Before swapFirstLast:");
         myList.printAll();
 
         myList.swapFirstLast();
 
-        System.out.println("\nDepois de swapFirstLast:");
+        System.out.println("\nAfter swapFirstLast:");
         myList.printAll();
     }
 }
